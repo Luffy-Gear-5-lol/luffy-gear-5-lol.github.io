@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "xevent",
+  "builds": [
+    { "src": "xevent/**", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/xevent/$1" }
+  ]
+}
